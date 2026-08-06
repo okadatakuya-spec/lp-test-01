@@ -33,43 +33,84 @@
     }
     .footer p { margin: 0; }
     .footer a { color: inherit; }
+    .cta-spacer { height: 84px; background: #fff; }
+    .sticky-cta {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      display: flex;
+      justify-content: center;
+      background: rgba(22, 39, 77, 0.96);
+      padding: 10px 12px calc(10px + env(safe-area-inset-bottom));
+      box-shadow: 0 -4px 14px rgba(0, 0, 0, 0.3);
+    }
+    .sticky-cta a {
+      display: block;
+      width: 100%;
+      max-width: 536px;
+      background: linear-gradient(180deg, #e8c76e 0%, #c9a44c 100%);
+      color: #1a2f5e;
+      font-family: Meiryo, sans-serif;
+      font-weight: bold;
+      font-size: 18px;
+      letter-spacing: 2px;
+      text-align: center;
+      text-decoration: none;
+      padding: 15px 0;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+    }
+    .sticky-cta .free { color: #c8102e; }
   </style>
 </head>
 <body>
   <main class="page">
-    <img src="images/img-01.png" alt="オフィスの原状回復から新しい空間のデザインまで、すべてをひとつに - Office Recovery">
+    <img src="images/img-01.webp" alt="オフィスの原状回復から新しい空間のデザインまで、すべてをひとつに - Office Recovery">
     <p class="area-note">※対応エリア：東京都・神奈川県・埼玉県・千葉県</p>
 
     <a href="mailto:contact@example.com?subject=%E3%80%90Office%20Recovery%E3%80%91%E7%84%A1%E6%96%99%E7%9B%B8%E8%AB%87">
-      <img src="images/img-02.png" alt="移転の工程を相談する" loading="lazy">
+      <img src="images/img-02.webp" alt="移転の工程を相談する" loading="lazy">
     </a>
     <!-- LINE-BUTTON-SLOT: LINE公式開通後にここへボタン挿入 -->
 
-    <img src="images/img-03.png" alt="オフィス移転・退去のよくあるお困りごと" loading="lazy">
-    <img src="images/img-04.png" alt="窓口一本化のご説明" loading="lazy">
-    <img src="images/img-05-title.png" alt="Office Recoveryを導入するメリット" loading="lazy">
-    <img src="images/img-05a.png" alt="選ばれる理由01" loading="lazy">
-    <img src="images/img-05b.png" alt="選ばれる理由02" loading="lazy">
-    <img src="images/img-05c.png" alt="選ばれる理由03" loading="lazy">
-    <img src="images/img-05d.png" alt="選ばれる理由04" loading="lazy">
-    <img src="images/img-06.png" alt="サービス内容" loading="lazy">
-    <img src="images/img-07.png" alt="初回相談で得られるもの" loading="lazy">
+    <img src="images/img-03.webp" alt="オフィス移転・退去のよくあるお困りごと" loading="lazy">
+    <img src="images/img-04.webp" alt="窓口一本化のご説明" loading="lazy">
+    <img src="images/img-05-title.webp" alt="Office Recoveryを導入するメリット" loading="lazy">
+    <img src="images/img-05a.webp" alt="選ばれる理由01" loading="lazy">
+    <img src="images/img-05b.webp" alt="選ばれる理由02" loading="lazy">
+    <img src="images/img-05c.webp" alt="選ばれる理由03" loading="lazy">
+    <img src="images/img-05d.webp" alt="選ばれる理由04" loading="lazy">
+    <img src="images/img-06.webp" alt="サービス内容" loading="lazy">
+    <img src="images/img-07.webp" alt="初回相談で得られるもの" loading="lazy">
+
+    <a href="mailto:contact@example.com?subject=%E3%80%90Office%20Recovery%E3%80%91%E7%84%A1%E6%96%99%E7%9B%B8%E8%AB%87">
+      <img src="images/img-02.webp" alt="移転の工程を相談する" loading="lazy">
+    </a>
 
     <!-- PRICE-SECTION-SLOT: img-08.png 確定後にここへ挿入 -->
 
-    <img src="images/img-09.png" alt="ご依頼の流れ" loading="lazy">
-    <img src="images/img-10.png" alt="よくあるご質問" loading="lazy">
+    <img src="images/img-09.webp" alt="ご依頼の流れ" loading="lazy">
+    <img src="images/img-10.webp" alt="よくあるご質問" loading="lazy">
     <a href="mailto:contact@example.com?subject=%E3%80%90Office%20Recovery%E3%80%91%E7%84%A1%E6%96%99%E7%9B%B8%E8%AB%87">
-      <img src="images/img-11.png" alt="メールで相談する" loading="lazy">
+      <img src="images/img-02.webp" alt="移転の工程を相談する" loading="lazy">
+    </a>
+    <a href="mailto:contact@example.com?subject=%E3%80%90Office%20Recovery%E3%80%91%E7%84%A1%E6%96%99%E7%9B%B8%E8%AB%87">
+      <img src="images/img-11.webp" alt="メールで相談する" loading="lazy">
     </a>
 
     <!-- FORM-SLOT: 問い合わせフォーム実装時にここへ挿入 -->
 
-    <img src="images/img-12.png" alt="Office Recovery" loading="lazy">
+    <img src="images/img-12.webp" alt="Office Recovery" loading="lazy">
     <footer class="footer">
       <p><a href="https://centerfield-inc.com/" target="_blank" rel="noopener">会社概要</a></p>
       <p>© Center Field inc.</p>
     </footer>
+    <div class="cta-spacer"></div>
   </main>
+  <div class="sticky-cta">
+    <a href="mailto:contact@example.com?subject=%E3%80%90Office%20Recovery%E3%80%91%E7%84%A1%E6%96%99%E7%9B%B8%E8%AB%87">今すぐ<span class="free">無料</span>で相談</a>
+  </div>
 </body>
 </html>
